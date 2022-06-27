@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Game Mania</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- FONT AWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+
+     <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container col-4 py-3" style="margin-top: 3%; background-color: #4863A0;">
+
+        <!--TITULO-->
+        <div class="text-center mb-5">
+            <p class="display-4 " style="color: white; font-weight: bold;">LOGIN</p>
+        </div>
+        
+        <!--CAMPOS-->
+        <div class=" text-center d-flex mx-5 mb-4" >
+            <span class="col-1 icone font-weight-bold rounded-left" >@</span>
+            <input id="email" class ="col-11 campo pr-4 font-weight-bold rounded-right" type="email" placeholder="Email">
+        </div>
+        <div class=" text-center d-flex mx-5 mb-4">
+            <span class="col-1 icone rounded-left"><i class="fa fa-unlock-alt"></i></span>
+            <input id="senha" class ="col-9 pr-4 campo font-weight-bold" type="password" placeholder="Senha (senha teste 12345)">
+            <span class="col-2 icone rounded-right">
+                <i id="olho" class="fa fa-eye" onclick="mostrarSenha()"></i>
+                <i id="olho-slash" class="fa fa-eye-slash" onclick="mostrarSenha()"></i>
+            </span>
+        </div>
+        
+        <!--BOTAO-->
+        <div class=" text-center mx-5 mb-5">
+            <a ><button onclick="salvaLogin()" class="botao btn btn-light font-weight-bold">Login</button></a>        
+        </div>
+        
+        <!--TEXTO-->
+        <p class="text-center mx-5 font-weight-bold mb-1" style="color: #A5A5D9;">Ou faça login com</p>        
+        
+        <!--OUTRO BOTOES-->
+        <div class="mx-5 mb-4 d-flex">
+            <a class="col-6" href="index.html"><button title="nop" class="botao botao-face btn btn-light font-weight-bold" style="color: white; background-color: #4267b2;"><i class="fab fa-facebook-f"></i> Facebook</button></a>        
+            <a class="col-6" href="index.html"><button title="tambem não" class="botao btn btn-light font-weight-bold">Google</button></a>        
+        </div>
+
+            <p class="text-center" style="color: white;">Não possui uma conta? <a title="sqn" style="color: lightgreen;">Registre-se!</a></p>
+        </div>
+
+    </div>
+
+    <script src="scrpit.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.campo{
+    height: 50px;
+    border: none;
+    background-color: #A5A5D9;
+    color: #4B4B70;
+}
+
+.campo:focus{
+    outline:none
+}
+
+.campo::placeholder{
+    color: #4B4B70;
+    opacity: 0.7;
+}
+
+.icone{
+    height: 50px;
+    background-color: #A5A5D9;
+    color: #4B4B70;
+    padding-top: 12px;
+}
+
+#olho{
+    display: none;
+}
+
+.link:hover{
+    color: whitesmoke;
+}
+
+.botao{
+    height: 50px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
