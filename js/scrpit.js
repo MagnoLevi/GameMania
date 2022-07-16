@@ -1,3 +1,11 @@
+$(document).ready(function(){
+
+
+    
+});
+
+
+
 function salvaLogin(){
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
@@ -74,7 +82,7 @@ let listaGaleria = [
         imagem: 'nintendo2',
     },
     {
-        imagem: 'iphone',
+        imagem: 'moto',
     }
 ]
 let listaGaleria1 = [
@@ -121,7 +129,7 @@ function renderizarAnuncio(){
                         <img class="rounded" src="img/${anuncioGaleria1.imagem}.jpg" style="height: 200px;">
                     </div>`;
     }
-
+   
     espacoDestaques.innerHTML = templateDestaque
     espacoNovidades.innerHTML = templateNovidades
     espacoGaleria.innerHTML = templateGaleria
